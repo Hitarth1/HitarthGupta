@@ -34,12 +34,73 @@ body, html{
     color: white;
 }
 
-/* .hero_title{
+.hero_title{
     position: relative;
     color: rgba(255, 255, 255, 0);
-} */
+} 
 
-/* .hero_title.reveal{
+.hero_title.reveal{
     color: white;
     transition-delay: 0.8s;
-} */
+}
+
+#hero h1 a.reveal{
+    color: yellow;
+}
+
+.hero_title:before{
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    content: "";
+}
+
+@keyframes animation-h1-bg-reveal-cover{
+    0%{
+        left: 0;
+        width: 0;
+    }
+
+    100%{
+        left: 0;
+        width: 100%;
+    }
+}
+
+.hero_title.reveal:before{
+    animation: animation-h1-bg-reveal-cover .5s ease-out .3s forwards, animation-h1-bg-reveal-uncover 1s ease-out 1.4s forwards;
+}
+
+@keyframes animation-h1-bg-reveal-uncover{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+#hero h1 a:before{
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
