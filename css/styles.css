@@ -126,9 +126,18 @@ Pre Loader
     text-decoration: none;
 }
 
+#slider{
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6);
+}
 
-
-
+#slider img{
+    height: 100%;
+    width: auto;
+}
 
 
 

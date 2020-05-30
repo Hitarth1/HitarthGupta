@@ -24,4 +24,14 @@ $(document).ready(function(){
     });
 
 
-})
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        loops: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: false,
+        animateOut: 'fadeOut'
+    });
+
+});
