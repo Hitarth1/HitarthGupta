@@ -8,3 +8,38 @@
     top: 0;
     z-index: 100;
 } 
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+#hero .hero_outer-wrapper{
+    position: absolute;
+    height: 100%;
+    display: table;
+}
+
+#hero .hero_inner-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#hero h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 16px 0 70px 0;
+    line-height: 80px;
+    color: white;
+}
+
+/* .hero_title{
+    position: relative;
+    color: rgba(255, 255, 255, 0);
+} */
+
+/* .hero_title.reveal{
+    color: white;
+    transition-delay: 0.8s;
+} */
