@@ -139,7 +139,15 @@ Pre Loader
     width: auto;
 }
 
-
+/*------------------------
+Navigation Bar
+-------------------------*/
+.navbar{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 15px 50px 0 50px;
+    text-transform: uppercase;
+}
 
 
 
