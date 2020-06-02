@@ -34,4 +34,16 @@ $(document).ready(function(){
         animateOut: 'fadeOut'
     });
 
+    // reveal text when in viewport
+    $(".text_reveal:not(.in)").each(function(i){
+        var $current_element = $(this);
+        $current_element.isInViewport(function(status){
+            if(status === "entered"){
+                setTimeout(() => {
+                   $current_element.addClass("in"); 
+                }, i * 5);
+            }
+        })
+    })
+
 });
