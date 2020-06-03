@@ -44,6 +44,14 @@ $(document).ready(function(){
                 }, i * 5);
             }
         })
-    })
+    });
+
+    $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
 
 });
