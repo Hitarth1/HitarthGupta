@@ -301,6 +301,10 @@ About Us Section
 /*------------------------
 Blog Section
 -------------------------*/
+#blog{
+    background-color: rgba(0, 0, 0, .1);
+    padding-bottom: 30px;
+}
 .blog:hover{
     text-decoration: none;
 }
@@ -311,14 +315,29 @@ Blog Section
     font-weight: 600;
 }
 
+/*------------------------
+Contact Us Section
+-------------------------*/
+#contact-us{
+    background-color: black;
+    color: white;
+}
 
+#contact-us a{
+    color: white;
+}
 
+#contact-us a:hover{
+    text-decoration: none;
+    color: yellow;
+}
 
-
-
-
-
-
+#contact-us address{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 30px;
+}
 
 
 
