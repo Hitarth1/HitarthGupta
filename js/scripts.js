@@ -54,4 +54,12 @@ $(document).ready(function(){
         }
     });
 
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 0 ){
+            $(".navbar").addClass("nav-bg-black");
+        } else {
+            $(".navbar").removeClass("nav-bg-black");
+        }
+    });
+
 });
